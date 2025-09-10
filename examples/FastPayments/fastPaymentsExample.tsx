@@ -184,7 +184,7 @@ const FastPaymentExample: React.FC = () => {
       else if (
         selectedMethod.type !== 'account_money' &&
         'security_code_settings' in selectedMethod &&
-        selectedMethod.security_code_settings?.mode === 'madatory'
+        selectedMethod.security_code_settings?.mode === 'mandatory'
       ) {
         setState((prev) => ({ ...prev, securityCodeMounted: true }));
       }
